@@ -1,4 +1,4 @@
-Adafruit Python BMP
+Python BMP280
 ===================
 
 Python library for accessing temperature and pressure measurments of BMP280 chip

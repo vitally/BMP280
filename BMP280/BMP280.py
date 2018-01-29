@@ -187,7 +187,7 @@ class BMP280(object):
             return 0
 
         p = 1048576 - adc_P;
-        p = (((p<<31) - var2)*3125) / var1;
+        p = int((((p<<31) - var2)*3125) / var1);
         var1 = ((self.cal_REGISTER_DIG_P9) * (p>>13) * (p>>13)) >> 25;
         var2 = ((self.cal_REGISTER_DIG_P8) * p) >> 19;
 
